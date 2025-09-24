@@ -95,17 +95,42 @@
         flex: 2;
       }
       footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: #242323;
         color: #fff;
-        text-align: center;
-        padding: 1rem;
+        padding: 0 1rem;
         margin-top: 2rem;
       }
-      .footer-section {
-        margin: 0.5rem;
+      .footer-left {
+        flex: 1;
+      }
+      .footer-right {
+        flex: 1;
+      }
+      .footer-right ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        justify-content: flex-end;
+      }
+      .footer-right ul li {
+        margin: 0 10px;
+        padding: 0 10px;
+      }
+      .footer-right ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        transition: all ease 0.4s;
+      }
+      .footer-right ul li a:hover {
+        color: #f0ac45;
       }
       .footer-copyright {
-        margin-top: 1rem;
+        margin: 0;
         font-size: 14px;
       }
     </style>
@@ -146,10 +171,17 @@
           <p>Study habits refers to the practices, routines, and strategies that help students to learn. By developing effective study habits, you can improve your understanding of the material, boost your confidence, and reach your full potential.</p>
         </div>
       </div>
+      </div>
       <footer>
-        <div class="footer-copyright">
-          <p>&copy; 2023 AceYourStudy. All rights reserved.</p>
+        <div class="footer-left">
+          <p class="footer-copyright">&copy; 2023 AceYourStudy. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
         </div>
       </footer>
   </body>
-        </html>
+        </html>     
