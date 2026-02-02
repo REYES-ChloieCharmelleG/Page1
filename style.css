@@ -65,9 +65,6 @@ body {
         border-radius: 8px;
         transition: transform 0.3s ease;
       }
-      .container img:hover {
-        transform: scale(1.1);
-      }
       .new-section {
         display: flex;
         align-items: flex-start;
